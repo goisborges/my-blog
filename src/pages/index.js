@@ -25,7 +25,7 @@ const IndexPage = () => {
     <h2>{data.site.siteMetadata.description}</h2>
     <StaticImage
       src="../images/gatsby-astronaut.png"
-      width={300}
+      width={1200}
       quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="A Gatsby astronaut"
