@@ -4,14 +4,6 @@ module.exports = {
     description: `My Gatsby, Strapi and Markdown Files Blog Project`,
     author: `Marcos de Gois Borges`,
   },
-    upload: {
-      provider: 'cloudinary',
-      providerOptions: {
-        cloud_name: env('CLOUDINARY_NAME'),
-        api_key: env('CLOUDINARY_KEY'),
-        api_secret: env('CLOUDINARY_SECRET'),
-      }
-    },
 
   plugins: [
     
