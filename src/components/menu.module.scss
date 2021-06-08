@@ -1,0 +1,31 @@
+.items{
+    display: flex;
+    flex-direction: row;
+    //align-items: center;
+    align-content: space-between;
+    list-style: none;
+    //width: 400px;
+    margin: 0;
+    
+}
+.navbar {
+    //width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    //align-items: flex-start;
+    //margin-left: 100px;
+    padding: 0px;
+}
+.liItem {
+    padding: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    color: grey;
+}
+.liItem:hover {
+    color: #666666;
+}
+.activeItem {
+    color: #333333
+}
