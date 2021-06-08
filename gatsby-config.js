@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: process.env.DEPLOY_URL ? 'https://dashboard.heroku.com/apps/infinite-sierra-55283/' : 'http://localhost:1337',
+        apiURL: process.env.DEPLOY_URL ? 'https://infinite-sierra-55283.herokuapp.com/' : 'http://localhost:1337',
         collectionTypes: [ // List of the Content Types you want to be able to request from Gatsby.
           'articles',
           'users'
