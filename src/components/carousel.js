@@ -102,3 +102,5 @@ import * as carouselStyle from "../components/carousel.module.css"
     }
 
     export default HomeCarousel
+
+    //let's try the carousel
