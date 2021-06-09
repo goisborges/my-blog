@@ -6,6 +6,9 @@ import Seo from "../components/seo"
 
 import { graphql, useStaticQuery} from "gatsby"
 
+import HomeCarousel from '../components/carousel'
+
+
 
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
@@ -19,19 +22,23 @@ const IndexPage = () => {
     
     `)
 
+    
   return (
   <Layout>
     <Seo title="Home" />
-    <h2>{data.site.siteMetadata.description}</h2>
+    <p>{data.site.siteMetadata.description}</p>
+    <HomeCarousel />
     <StaticImage
       src="../images/gatsby-astronaut.png"
       width={1200}
       quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
+      style={{ marginTop: `100px` }}
+      placeholder="tracedSVG"
     />
-    
+   
+
     
     
   </Layout>
