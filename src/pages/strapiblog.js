@@ -5,7 +5,7 @@ import * as blogStyles from "./blog.module.scss"
 
 
 const Strapiblog = () => {
-   const data = useStaticQuery (graphql`
+   const data2 = useStaticQuery (graphql`
     	query queryArticles {
             allStrapiArticles {
                 edges {
@@ -18,7 +18,7 @@ const Strapiblog = () => {
             }
         }
    `)
-   console.log(data)
+   console.log(data2)
     return (
         
         <Layout>
@@ -27,12 +27,12 @@ const Strapiblog = () => {
                 <p>dynamic pages being built using a Javascript template and information retrieved from Strapi CMS </p>
             </div>
             <ol className={blogStyles.posts}>
-                {data.allStrapiArticles.edges.map((edge) => {
+                {data2.allStrapiArticles.edges.map((edge) => {
                     return (
                         <li className={blogStyles.post}>
                             <p>{edge.node.id}</p>
-                            <h2><Link to="">{edge.node.title}</Link></h2>
-                            <p>{edge.node.body}</p>
+                            <h2><Link to={edge.node.title}>{edge.node.title}</Link></h2>
+                            
                             
                         </li>    
                     )

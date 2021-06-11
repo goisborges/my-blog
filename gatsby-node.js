@@ -57,4 +57,35 @@ module.exports.createPages = async ({ graphql, actions }) => {
     //1. get path to template
     //2. get markdown data
     //3. create new pages
+
+    
+//Strapi Blog Pages - create pages 
+//Create Pages API - Gatsby Docs
+
+    //const { createPage } = actions
+    const strapiBlogTemplate = path.resolve('./src/templates/strapiblog.js')
+    const res2 = await graphql(`
+        query queryArticles {
+            allStrapiArticles {
+                edges {
+                    node {
+                        title
+                        id
+                        body
+                    }
+                }
+            }
+        }
+    `)
+
+        res2.data.allStrapiArticles.edges.forEach((edge) => {
+            createPage({
+                component: strapiBlogTemplate,
+                path: `/strapiblog/${edge.node.title}`,
+                context: {
+                    slug: edge.node.title
+                }
+            })
+        });
 }
+
