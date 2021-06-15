@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Home",
+        "URL": "/"
+    },
+    {
+        "id": 2,
+        "title": "Contact",
+        "URL": "/contact"
+    },
+    {
+        "id": 3,
+        "title": "Blog",
+        "URL": "/blog"
+    },
+    {
+        "id": 4,
+        "title": "Strapi Blog",
+        "URL": "/strapiblog"
+    }
+]
