@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 
 import { MdEmail } from 'react-icons/md'
 import { AiFillLinkedin } from 'react-icons/ai'
+import { AiFillFacebook } from "react-icons/ai"
 
 import * as contactStyle from '../pages/contact.module.css'
 
@@ -13,19 +14,23 @@ const Contact = () => {
             <Layout> 
                 <div className="jumbotron jumbotron-fluid card card-image" style={{background: "white", margin: "15px"}}>
                     <div className= "text-black text-center py-5 px-4">
-                        <h1 className="display-4">Contact page </h1>
-                        <p className="lead">Contact me by e-mail or my Linkedin page </p>
+                        <h1 className="display-4">Contact Me </h1>
+                        <p className="lead">Have any questions? Let me know.</p>
                     </div>
                 </div>
-                <div className={contactStyle.contactContainer}>
-                    <div className={contactStyle.emailContainer}>
-                        <button type="button" className="btn btn-outline-primary btn-lg ml-4"><a href="mailto:marcosb@avetti.ca">E-mail me </a></button> 
+                <div className={contactStyle.itemContainer}>
+                    <div className="card" style={{width: "20rem", margin:"10px"}}>
+                        <button type="button" className="btn btn-outline-primary btn-lg ml-3"><a href="mailto:marcosb@avetti.ca">E-mail me </a></button> 
                         <MdEmail /> 
                     </div>
-                    <div className={contactStyle.linkedinContainer}>
-                        <br></br>
+                    <div className="card" style={{width: "20rem", margin:"10px"}}>  
                         <button type="button" className="btn btn-outline-primary btn-lg mr-3"><a href="http://www.linkedin.com" target="blank">My LinkedIn page</a></button>
                         <AiFillLinkedin />
+                    </div>
+                    <div className="card" style={{width: "20rem", margin:"10px"}}>
+                        
+                        <button type="button" className="btn btn-outline-primary btn-lg mr-3"><a href="http://www.facebook.com" target="blank">My Facebook page</a></button>
+                        <AiFillFacebook />
                     </div>
                 </div>
               
