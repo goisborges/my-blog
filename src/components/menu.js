@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import * as menuStyle from "./menu.module.scss"
 import * as MenuJson from "../json/menu.json"
 
+console.log(JSON.stringify(MenuJson))
 const Menu = () => {
     return (
         <nav className={menuStyle.navbar} style={{
@@ -28,6 +29,7 @@ const Menu = () => {
         </nav>
         
     )
+    
 }
 
 export default Menu
