@@ -52,7 +52,7 @@ typings/
 *.tgz
 
 # dotenv environment variable files
-.env*
+
 
 # gatsby files
 .cache/
@@ -68,7 +68,7 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-package-lock.json
+
 # Local Netlify folder
 .netlify
 

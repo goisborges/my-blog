@@ -18,5 +18,10 @@
         "id": 4,
         "title": "Strapi Blog",
         "URL": "/strapiblog"
+    },
+    {
+        "id": 5,
+        "title": "Testing",
+        "URL": "/test"
     }
 ]
