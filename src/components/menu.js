@@ -20,6 +20,7 @@ const Menu = () => {
                 })}
                
             </ul>
+            {/*}
             <br></br>
             <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
                 <Button>Home</Button>
