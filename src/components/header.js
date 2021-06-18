@@ -5,6 +5,8 @@ import Menu from "./menu"
 
 import * as Headerstyle from './header.module.scss'
 
+
+
 const Header = ({ siteTitle }) => (
   <header
   
@@ -34,6 +36,7 @@ const Header = ({ siteTitle }) => (
     </div>
     
       <Menu />
+      
     
   </header>
 )

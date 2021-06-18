@@ -3,6 +3,9 @@ import { Link } from "gatsby"
 import * as menuStyle from "./menu.module.scss"
 import * as MenuJson from "../json/menu.json"
 
+import { ButtonGroup, Button } from "@material-ui/core"
+
+
 console.log(JSON.stringify(MenuJson))
 const Menu = () => {
     return (
@@ -17,6 +20,13 @@ const Menu = () => {
                 })}
                
             </ul>
+            <br></br>
+            <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+                <Button>Home</Button>
+                <Button>Strapi Blog</Button>
+                <Button>Blog</Button>
+                <Button>Contact</Button>
+            </ButtonGroup>
             {/*
             <ul className={menuStyle.items}>
                 <li><Link className={menuStyle.liItem} activeClassName={menuStyle.activeItem} to="/">Home</Link></li>
