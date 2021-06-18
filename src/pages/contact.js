@@ -7,6 +7,8 @@ import { AiFillFacebook } from "react-icons/ai"
 
 import * as contactStyle from '../pages/contact.module.css'
 
+import { Button } from '@material-ui/core'
+
 
 const Contact = () => {
     return (
@@ -18,6 +20,7 @@ const Contact = () => {
                         <p className="lead">Have any questions? Let me know.</p>
                     </div>
                 </div>
+                
                 <div className={contactStyle.itemContainer}>
                     <div className="card" style={{width: "20rem", margin:"10px"}}>
                         <button type="button" className="btn btn-outline-primary btn-lg ml-3"><a href="mailto:marcosb@avetti.ca">E-mail me </a></button> 
@@ -27,12 +30,22 @@ const Contact = () => {
                         <button type="button" className="btn btn-outline-primary btn-lg mr-3"><a href="http://www.linkedin.com" target="blank">My LinkedIn page</a></button>
                         <AiFillLinkedin />
                     </div>
-                    <div className="card" style={{width: "20rem", margin:"10px"}}>
+                    <div className="card" style={{width: "20rem", margin:"10px", marginBottom: "100px"}}>
                         
                         <button type="button" className="btn btn-outline-primary btn-lg mr-3"><a href="http://www.facebook.com" target="blank">My Facebook page</a></button>
                         <AiFillFacebook />
                     </div>
-                </div>
+                    <div>
+                        <h2>Buttons stylished using material-ui</h2>
+                    </div>
+                    
+                    <div className={contactStyle.materialButton}>
+                        <Button variant="contained" color="primary">Email</Button>
+                        <Button variant="contained" color="primary">LinkedIn</Button>
+                        <Button variant="contained" color="primary">Facebook</Button>
+                    </div>
+ 
+    </div> 
               
             </Layout>
       

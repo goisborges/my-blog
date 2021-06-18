@@ -19,3 +19,17 @@
     width: 300px;
     margin: 40px;
 }
+.materialButton {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+}
+.materialButton > button {
+    margin: 10px;
+    width: 180px;
+}
+.materialIcons {
+    margin: 10px;
+}
